@@ -91,7 +91,7 @@ export function BentoPricing() {
         </div>
         <div className="flex items-center gap-3 p-3">
           <Badge variant="secondary" className="bg-white/10 text-white border-white/20 font-open-sans-custom text-xs">
-            ПРЕМИУМ
+            МАКСИМУМ
           </Badge>
           <Badge
             variant="outline"
@@ -108,16 +108,16 @@ export function BentoPricing() {
         <div className="flex flex-col p-3 lg:flex-row">
           <div className="pb-2 lg:w-[30%]">
             <span className="font-mono text-3xl font-semibold tracking-tight text-white [text-shadow:_0_4px_20px_rgb(0_0_0_/_60%)]">
-              2 000 ₽
+              599 ₽
             </span>
             <span className="text-gray-300 text-xs font-open-sans-custom">/мес</span>
           </div>
           <ul className="text-gray-300 grid gap-2 text-xs lg:w-[70%] font-open-sans-custom">
             {[
-              "2 000 ₽ кредитов включено ежемесячно",
-              "Докупайте кредиты сверх месячного лимита",
-              "5x увеличенный лимит вложений",
-              "Импорт дизайнов из популярных инструментов",
+              "Безлимитный доступ ко всей коллекции",
+              "Новые серии раньше всех",
+              "Скачивание для просмотра офлайн",
+              "HD и 4K качество без ограничений",
             ].map((f, i) => (
               <li key={i} className="flex items-center gap-2">
                 <Check className="w-[1.05rem] h-[1.05rem] text-white flex-shrink-0" strokeWidth={3} />
@@ -129,50 +129,50 @@ export function BentoPricing() {
       </div>
 
       <PricingCard
-        titleBadge="СТАРТ"
+        titleBadge="БЕСПЛАТНО"
         priceLabel="0 ₽"
         features={[
-          "500 ₽ кредитов включено ежемесячно",
-          "Деплой приложений в облако",
-          "Визуальное редактирование",
-          "Синхронизация с Git",
+          "5 мультиков в месяц бесплатно",
+          "Стандартное качество",
+          "Доступ к новинкам с задержкой",
+          "Реклама между сериями",
         ]}
         className="lg:col-span-3"
         cta="Начать"
       />
 
       <PricingCard
-        titleBadge="КОМАНДА"
-        priceLabel="3 000 ₽"
-        priceSuffix="/чел/мес"
+        titleBadge="БАЗОВЫЙ"
+        priceLabel="199 ₽"
+        priceSuffix="/мес"
         features={[
-          "3 000 ₽ кредитов на участника ежемесячно",
-          "Единый биллинг и управление командой",
-          "Общие чаты и совместная работа",
+          "30 мультиков в месяц",
+          "HD качество",
+          "Без рекламы",
         ]}
         className="lg:col-span-4"
       />
 
       <PricingCard
-        titleBadge="БИЗНЕС"
-        priceLabel="10 000 ₽"
-        priceSuffix="/чел/мес"
-        features={["3 000 ₽ кредитов на участника ежемесячно", "Отключение обучения по умолчанию", "Полный доступ к API"]}
+        titleBadge="СТАНДАРТ"
+        priceLabel="399 ₽"
+        priceSuffix="/мес"
+        features={["100 мультиков в месяц", "HD качество без рекламы", "Ранний доступ к новинкам"]}
         className="lg:col-span-4"
       />
 
       <PricingCard
-        titleBadge="КОРПОРАЦИЯ"
-        priceLabel="По запросу"
-        priceSuffix=""
+        titleBadge="СЕМЕЙНЫЙ"
+        priceLabel="899 ₽"
+        priceSuffix="/мес"
         features={[
-          "Отключение обучения по умолчанию",
-          "SAML SSO",
-          "Приоритетный доступ",
-          "Персональная поддержка",
+          "До 4 профилей в одном аккаунте",
+          "Полный безлимитный доступ",
+          "4K качество",
+          "Детский режим с фильтрацией контента",
         ]}
         className="lg:col-span-8"
-        cta="Связаться"
+        cta="Оформить"
       />
     </div>
   )
